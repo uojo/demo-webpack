@@ -1,0 +1,1 @@
+require("./mod_es5"); // 使用CommonJs来加载模块
