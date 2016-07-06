@@ -91,20 +91,22 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(2); // ʹ��CommonJs������ģ��
+	__webpack_require__(9); // 使用CommonJs来加载模块
 
 /***/ },
-/* 1 */,
-/* 2 */
+
+/***/ 9:
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__.e/* require */(2, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(3)]; (function(){
+	__webpack_require__.e/* require */(2, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(10)]; (function(){
 	  console.log("Hello Webpack!");
 	}.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));});
 
 /***/ }
-/******/ ]);
+
+/******/ });

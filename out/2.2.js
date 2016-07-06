@@ -1,17 +1,16 @@
-webpackJsonp([2],[
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */
+webpackJsonp([2],{
+
+/***/ 10:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// 使用AMD模块机制
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(4)], __WEBPACK_AMD_DEFINE_RESULT__ = function(sum){
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(11)], __WEBPACK_AMD_DEFINE_RESULT__ = function(sum){
 	  return console.log("1 + 2 = " + sum(1, 2));
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))
 
 /***/ },
-/* 4 */
+
+/***/ 11:
 /***/ function(module, exports) {
 
 	// 使用的是CommonJs机制导出包
@@ -20,4 +19,5 @@ webpackJsonp([2],[
 	}
 
 /***/ }
-]);
+
+});
