@@ -17,8 +17,8 @@ module.exports = {
 	module:{
 		loaders:[
 			// {test:/\.js/,loader:"babel"},
-			// {test: /\.(tpl|ejs)$/, loader: 'ejs'},
-			// {test:/\.css$/,loader:"style!css"},
+			{test:/\.(tpl|ejs)$/,loader: 'ejs'},
+			{test:/\.css$/,loader:"style!css"},
 			{test:/\.(jpg|png)$/,loader:"url?limit=8192"}
 		]
 	}

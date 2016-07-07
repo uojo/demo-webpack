@@ -91,7 +91,7 @@
 	exports.i(__webpack_require__(4), "");
 
 	// module
-	exports.push([module.id, "body {background:url(" + __webpack_require__(5) + ") no-repeat #ccc;}", ""]);
+	exports.push([module.id, "body {background:url(" + __webpack_require__(5) + ") no-repeat #eee left bottom; background-size:164px 91px;}", ""]);
 
 	// exports
 
@@ -161,7 +161,7 @@
 
 
 	// module
-	exports.push([module.id, "p{ color:blue; }", ""]);
+	exports.push([module.id, "body{ color:#333; }", ""]);
 
 	// exports
 
