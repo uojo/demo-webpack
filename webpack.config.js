@@ -1,15 +1,13 @@
 var path = require("path");
 module.exports = {
 	//演示单入口文件
-	entry: [
-	  // 'webpack-dev-server/client?http://127.0.0.1:8080', // WebpackDevServer host and port
-	  // 'webpack/hot/only-dev-server',
-	  './src/entry1' // Your app?s entry point
-	],
+	entry: {
+		"page1":"./src/entry1.js",
+		"page2":"./src/entry2.js"
+	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
-		// publicPath: "/dist",
-		filename: "bundle.js"
+		filename: "[name].js"
 	},
 	module:{
 		loaders:[
