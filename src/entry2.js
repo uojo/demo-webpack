@@ -1,1 +1,1 @@
-require("./mod_amd_require"); // Ê¹ÓÃCommonJsÀ´¼ÓÔØÄ£¿é
+require("./mod_amd_require"); // ä½¿ç”¨CommonJsæ¥åŠ è½½æ¨¡å—
