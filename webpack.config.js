@@ -1,11 +1,11 @@
 var path = require("path");
 module.exports = {
-	//ÑÝÊ¾µ¥Èë¿ÚÎÄ¼þ
-	entry: [
+	//ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
+	entry: {
 	  // 'webpack-dev-server/client?http://127.0.0.1:8080', // WebpackDevServer host and port
 	  // 'webpack/hot/only-dev-server',
-	  './src/entry1' // Your app?s entry point
-	],
+	  app:['./src/entry1'] // Your app?s entry point
+	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		// publicPath: "/dist",

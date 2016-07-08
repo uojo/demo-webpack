@@ -14,7 +14,7 @@
 
 ## 热加载 ##
 - npm install webpack-dev-server -g
-- node server.js
+- node server.js 或者 webpack-dev-server
 
 ## 页面索引 ##
 - page1.html // 热加载自动刷新
