@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "grunt"
+    "start": "grunt blive"
   },
   "dependencies": {
 	"matchdep": "~0.3.0",
