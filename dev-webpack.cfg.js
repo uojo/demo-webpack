@@ -1,5 +1,7 @@
 const webpack = require('webpack');
 var path = require("path");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var path = require("path");
 
 module.exports = {
 	//演示单入口文件
@@ -23,6 +25,12 @@ module.exports = {
 		]
 	},
 	plugins:[
-		new webpack.HotModuleReplacementPlugin()
+		new webpack.HotModuleReplacementPlugin(),
+		
+		new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: path.resolve(__dirname, './index.html'),
+            inject: true
+        })
 	]
 };
