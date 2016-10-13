@@ -7,6 +7,15 @@ Webpack 热加载，自动刷新
 - npm install webpack -g // 全局安装
 
 ## 开始 ##
-- node server.js
-- 访问 http://127.0.0.1:3000/page1.html 或 http://127.0.0.1:3000/webpack-dev-server/page1.html
-- 修改 src/entry1.js 后页面自动刷新
+
+1.server-inline模式，命令行启动
+
+- npm run s1
+- 访问 `http://127.0.0.1:3000`
+- 修改 `src` 目录下任何文件，页面将自动刷新
+
+2.server-inline-hot热模式替换，命令行启动
+
+- npm run s2
+- 访问 `http://127.0.0.1:3000`
+- 修改 `src` 目录下任何文件，页面将自动刷新
