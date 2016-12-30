@@ -9,5 +9,6 @@
 - webpack -d ：提供source map，方便调试。
 
 ## Demo ##
-- 分支 b1 ：Webpack 热加载、自动刷新
+- 分支 b1 ：webpack-dev-server + Webpack 热加载、自动刷新
 - 分支 b2 ：Grunt + Webpack + LiveReload
+- 分支 b3 ：node.express + webpack-hot-middleware
