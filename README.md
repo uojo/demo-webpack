@@ -1,6 +1,6 @@
 # demo-webpack #
 
-Webpack 热加载，自动刷新
+Express + webpack-dev-middleware 自动刷新
 
 ## 安装 ##
 - npm install // 安装依赖模块
@@ -11,11 +11,5 @@ Webpack 热加载，自动刷新
 1.server-inline模式，命令行启动
 
 - npm run s1
-- 访问 `http://127.0.0.1:3000`
-- 修改 `src` 目录下任何文件，页面将自动刷新
-
-2.server-inline-hot热模式替换，命令行启动
-
-- npm run s2
 - 访问 `http://127.0.0.1:3000`
 - 修改 `src` 目录下任何文件，页面将自动刷新
