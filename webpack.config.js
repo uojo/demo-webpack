@@ -22,10 +22,13 @@ module.exports = {
 		//html引用路径，在这里是本地地址
 		publicPath: "./out/",
 		
-		"libraryTarget":"global"
+		library: "MyLibrary",
+		libraryTarget:"global"
 	},
+	// target:"node"
+	
 	//开启 map
-	devtool: "source-map",
+	// devtool: "source-map",
 	
 	// libraryTarget: ""
 };

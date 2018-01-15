@@ -1,5 +1,6 @@
 var webpack = require("webpack");
 var webpackConfig = require("./webpack.config");
+var merge = require('webpack-merge')
 var commander = require("commander");
 commander
 .option('-c, --create', '´ò°üÄ£¿é', "")
@@ -10,7 +11,7 @@ commander
 // console.log(webpackConfig);
 
 function compiler(ops){
-	var _conf = Object.assign({},webpackConfig,ops);
+	var _conf = merge(webpackConfig,ops);
 	console.log(_conf)
 	var _compiler = webpack( _conf );
 	
@@ -38,7 +39,9 @@ if( commander.watch ){
 
 if( commander.lib ){
 	compiler({
-		// "libraryTarget":commander.lib
+		"output":{
+			libraryTarget:commander.lib
+		}
 	})
 	
 }

@@ -26,6 +26,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "webpack": "3.10.0"
+    "webpack": "3.10.0",
+    "webpack-merge": "4.1.1"
   }
 }

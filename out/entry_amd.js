@@ -1,7 +1,17 @@
-(function(e, a) { for(var i in a) e[i] = a[i]; }(global, /******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["MyLibrary"] = factory();
+	else
+		root["MyLibrary"] = factory();
+})(typeof self !== 'undefined' ? self : this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
-/******/ 	var parentJsonpFunction = window["webpackJsonp"];
-/******/ 	window["webpackJsonp"] = function webpackJsonpCallback(chunkIds, moreModules, executeModules) {
+/******/ 	var parentJsonpFunction = window["webpackJsonpMyLibrary"];
+/******/ 	window["webpackJsonpMyLibrary"] = function webpackJsonpCallback(chunkIds, moreModules, executeModules) {
 /******/ 		// add "moreModules" to the modules object,
 /******/ 		// then flag all "chunkIds" as loaded and fire callback
 /******/ 		var moduleId, chunkId, i = 0, resolves = [], result;
@@ -161,5 +171,5 @@ __webpack_require__.e/* require */(0).then(function() { var __WEBPACK_AMD_REQUIR
 }).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}).catch(__webpack_require__.oe);
 
 /***/ })
-/******/ ])));
-//# sourceMappingURL=entry_amd.js.map
+/******/ ]);
+});
