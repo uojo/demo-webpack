@@ -1,0 +1,31 @@
+{
+  "name": "demo-webpack",
+  "version": "0.1.0",
+  "description": "示例",
+  "main": "",
+  "scripts": {
+    "start": "",
+    "build": "node index.js -run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uojo/demo-webpack"
+  },
+  "keywords": [
+    "webpack",
+    "uojo"
+  ],
+  "author": "uojonet@163.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uojo/demo-webpack/issues"
+  },
+  "homepage": "",
+  "devDependencies": {
+    "commander": "2.13.0"
+  },
+  "peerDependencies": {},
+  "dependencies": {
+    "webpack": "3.10.0"
+  }
+}

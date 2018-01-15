@@ -1,0 +1,1 @@
+require("./mod_amd_require");
