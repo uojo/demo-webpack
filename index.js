@@ -3,8 +3,8 @@ var webpackConfig = require("./webpack.config");
 var merge = require('webpack-merge')
 var commander = require("commander");
 commander
-.option('-c, --create', '´ò°üÄ£¿é', "")
-.option('-w, --watch', '¼àÌıÄ¿Â¼±ä¶¯²¢×Ô¶¯´ò°ü', "")
+.option('-c, --create', 'æ‰“åŒ…æ¨¡å—', "")
+.option('-w, --watch', 'ç›‘å¬ç›®å½•å˜åŠ¨å¹¶è‡ªåŠ¨æ‰“åŒ…', "")
 .option('-l, --lib [name]', '', "")
 .parse(process.argv);
 
@@ -31,7 +31,7 @@ if( commander.watch ){
 	var watching = compiler.watch({
 		/* watchOptions */
 	}, (err, stats) => {
-		// ÔÚÕâÀï´òÓ¡ watch/build ½á¹û...
+		// åœ¨è¿™é‡Œæ‰“å° watch/build ç»“æœ...
 		console.log(stats);
 	});
 
