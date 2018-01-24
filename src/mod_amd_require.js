@@ -1,3 +1,3 @@
 require(["./mod_amd_define"], function(){
-  console.log("Hello Webpack!");
+  console.log("mod_amd_require");
 });

@@ -1,1 +1,1 @@
-console.log("Hello Webpack!");
+console.log("mod_es5");

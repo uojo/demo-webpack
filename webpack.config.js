@@ -1,16 +1,48 @@
 var path = require("path");
+var utils = require('./build/utils')
+const webpack = require('webpack');
+
+//è·å–æ–‡ä»¶å¤¹ä¸‹çš„æ‰€æœ‰æ–‡ä»¶
+var entryFiles={};
+utils.getFiles.getFileList("./src/", /entry_/).map( (n,i)=>{
+	// console.log(n,i)
+	entryFiles[n.filename]=n.fullpath;
+});
+// console.log( entryFiles );
+
 module.exports = {
-	//ÑİÊ¾µ¥Èë¿ÚÎÄ¼ş
-	entry: {
-		"page1":"./src/entry1.js",
-		"page2":"./src/entry2.js"
-	},
+	//æ¼”ç¤ºå•å…¥å£æ–‡ä»¶
+	entry: entryFiles,
 	output: {
-		//´ò°üÊä³öµÄÂ·¾¶
+		//æ‰“åŒ…è¾“å‡ºçš„è·¯å¾„
 		path: path.join(__dirname, 'out'),
-		//´ò°üºóµÄÃû×Ö
-		filename: '[name].js',
-		//htmlÒıÓÃÂ·¾¶£¬ÔÚÕâÀïÊÇ±¾µØµØÖ·
-		publicPath: "./out/"
-	}
+		
+		//æ‰“åŒ…åçš„åå­—
+		filename: '[name]',
+		
+		//htmlå¼•ç”¨è·¯å¾„ï¼Œåœ¨è¿™é‡Œæ˜¯æœ¬åœ°åœ°å€
+		publicPath: "/out/",
+		
+		library: "MyLibrary",
+		libraryTarget:"umd"
+	},
+	devServer:{
+		"contentBase": "./src/html",
+		"port": 3333,
+		"hot": true,
+		before(app){
+			app.get('/some/path', function(req, res) {
+				res.json({ custom: 'response' });
+			});
+		}
+	},
+	plugins: [
+		new webpack.HotModuleReplacementPlugin()  //è®© webpack å¯åŠ¨å…¨å±€ HMR
+	]
+	// target:"node"
+	
+	//å¼€å¯ map
+	// devtool: "source-map",
+	
+	// libraryTarget: "window"
 };
