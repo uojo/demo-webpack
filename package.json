@@ -21,7 +21,7 @@
   "scripts": {
 		"s1": "webpack-dev-server --host 127.0.0.1 --port 3000 --content-base dist --inline",
 		"s2": "webpack-dev-server --host 127.0.0.1 --port 3000 --content-base dist --hot --inline",
-		"dev": "node dev-server"
+		"dev": "node dev-server",
 		"dev2": "node dev2"
   }
 }
