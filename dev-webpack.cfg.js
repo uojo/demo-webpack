@@ -4,11 +4,11 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path = require("path");
 
 module.exports = {
-	//ÑİÊ¾µ¥Èë¿ÚÎÄ¼ş
+	//æ¼”ç¤ºå•å…¥å£æ–‡ä»¶
 	entry: [
-	  'webpack-dev-server/client?http://127.0.0.1:3000', // WebpackDevServer host and port
-	  'webpack/hot/only-dev-server',
-	  './src/entry1' // Your app?s entry point
+		'webpack-dev-server/client?http://127.0.0.1:3000', // WebpackDevServer host and port
+		'webpack/hot/only-dev-server',
+		'./src/entry1' // Your app?s entry point
 	],
 	output: {
 		path: path.resolve(__dirname, "dist"),
@@ -28,9 +28,9 @@ module.exports = {
 		new webpack.HotModuleReplacementPlugin(),
 		
 		new HtmlWebpackPlugin({
-            filename: 'index.html',
-            template: path.resolve(__dirname, './index.html'),
-            inject: true
-        })
+			filename: 'index.html',
+			template: path.resolve(__dirname, './index.html'),
+			inject: true
+		})
 	]
 };
