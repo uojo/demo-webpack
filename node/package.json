@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/uojo/demo-webpack/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/uojo/demo-webpack",
   "devDependencies": {
     "commander": "2.13.0"
   },

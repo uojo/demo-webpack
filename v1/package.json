@@ -1,0 +1,28 @@
+{
+  "name": "demo-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "author": "uojo",
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.16.0",
+    "css-loader": "^0.23.1",
+    "ejs-loader": "^0.3.0",
+    "express": "^4.16.3",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.22.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.21.2"
+  },
+  "dependencies": {},
+  "scripts": {
+    "s1": "webpack-dev-server --host 127.0.0.1 --port 3000 --content-base dist --inline ",
+    "s2": "webpack-dev-server --host 127.0.0.1 --port 3000 --content-base dist --hot --inline",
+    "s3": "node dev-server",
+    "s4": "node dev-middleware"
+  }
+}
