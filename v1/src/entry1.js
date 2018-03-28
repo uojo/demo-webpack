@@ -29,6 +29,7 @@ console.log( "template.es6", html2 );
 // 热更新
 if(module.hot){
 	console.log("module.hot",module.hot);
+	
 	// 包括入口文件，所有改动均使用热更新
 	module.hot.accept()
 
