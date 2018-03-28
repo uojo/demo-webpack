@@ -15,8 +15,7 @@ app.use(webpackDevMiddleware(compiler, {
   noInfo: true,
   stats: {
     colors: true
-  },
-  hot:true
+  }
 }));
 app.use(webpackHotMiddleware(compiler,{
   // log:true,
