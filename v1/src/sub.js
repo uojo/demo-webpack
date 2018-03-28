@@ -1,7 +1,4 @@
 function generateText() {
-  　　var element = document.createElement('h2');
-  　　element.innerHTML = "ab";
-  　　return element;
-  }
-  module.exports = generateText;
-  
+  return "now-"+Date.now();
+}
+module.exports = generateText;

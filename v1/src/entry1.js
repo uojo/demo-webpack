@@ -10,7 +10,8 @@ document.getElementById("main").innerHTML = html1;
 
 // 注册子节点
 var sub = require('./sub');
-document.getElementById("sub").appendChild(sub());
+var wrap_sub = document.getElementById("sub");
+wrap_sub.innerHTML = sub();
 
 document.getElementById("j_btn1").onclick  = function(){
 	console.log(Da1);
@@ -25,9 +26,20 @@ var html2 = (`es6的模板${tplData.a1}、
 ${tplData.a2} \n "追加" 内容`);
 console.log( "template.es6", html2 );
 
-console.log(module.hot);
-
+// 热更新
 if(module.hot){
 	console.log("module.hot",module.hot);
-	// alert(12);
+	// 包括入口文件，所有改动均使用热更新
+	module.hot.accept()
+
+	// 当指定某个模块实现热更新，其它的均刷新浏览器
+	/* module.hot.accept('./sub.js',()=>{
+		console.log('accept.sub.callback',arguments);
+		var newSub = require('./sub.js');
+		console.log('new.sub()', newSub());
+		wrap_sub.innerHTML = newSub();
+	}); */
+
+
+
 }

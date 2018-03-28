@@ -15,10 +15,12 @@ app.use(webpackDevMiddleware(compiler, {
   noInfo: true,
   stats: {
     colors: true
-  }
+  },
+  hot:true
 }));
 app.use(webpackHotMiddleware(compiler,{
-  log:false
+  // log:true,
+  heartbeat: 2000
 }));
 
 /* app.use((req,res)=>{
