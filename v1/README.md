@@ -1,10 +1,7 @@
 # demo-webpack #
 
-Express + webpack-dev-middleware 自动刷新
-
 ## 安装 ##
 - npm install // 安装依赖模块
-- npm install webpack -g // 全局安装
 
 ## 开始 ##
 ### cli
