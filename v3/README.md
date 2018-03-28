@@ -24,6 +24,7 @@ npm run watch
 ```
 npm run build
 ``` 
+> entry_amd.js 生成的文件会多生成一个文件 `0`，其中定义 `webpackJsonpMyLibrary` 方法。
 
 编译成指定类型的文件，例如：jsonp、window、global、var、this、commonjs……
 ```

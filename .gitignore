@@ -4,3 +4,4 @@ dist/*.map
 dist/bundle.js
 .idea
 package-lock.json
+out/*
