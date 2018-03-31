@@ -1,32 +1,26 @@
 # demo-webpack #
-
+开发环境：webpack + vue
 
 ## usage ##
-### cli ###
-使用 webpack-dev-server 实现热更新。
-```
-npm start
-```
-涉及：
-- 支持 HMR 功能，实现热更新
-- 通过获取默认 `webpack.config.js` 为配置
-- 配置文件中设置 `devServer` 字段，插件：`HotModuleReplacementPlugin`
-- 获取指定目录下的多入口文件
-- 页面中手动引入编译文件
-
 ### node ###
-监听指定目录或文件变动时执行编译。
+使用 express + webpack-*-middle 实现热更新。
 ```
-npm run watch
+npm run dev
 ```
+涉及功能：
+- 支持 HMR 功能，实现热更新
 
-执行编译
-```
-npm run build
-``` 
-> entry_amd.js 生成的文件会多生成一个文件 `0`，其中定义 `webpackJsonpMyLibrary` 方法。
+使用的 webpack 插件：
+- add-asset-html-webpack-plugin
+- case-sensitive-paths-webpack-plugin
+- compression-webpack-plugin
+- extract-text-webpack-plugin
+- friendly-errors-webpack-plugin
+- html-webpack-plugin
+- uglifyjs-webpack-plugin
+- webpack-bundle-analyzer
+- webpack-dev-middleware
+- webpack-hot-middleware
+- webpack-merge
 
-编译成指定类型的文件，例如：jsonp、window、global、var、this、commonjs……
-```
-node index.js -lab "global"
-```
+

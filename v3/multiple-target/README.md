@@ -1,5 +1,5 @@
 # demo-webpack #
-
+开发场景：多入口，多种编码方式。
 
 ## usage ##
 ### cli ###
