@@ -1,14 +1,7 @@
+var webpack = require('webpack');
 var path = require("path");
-var utils = require('./build/utils')
-const webpack = require('webpack');
+var entryFiles = require('./build/entry_files')
 
-//获取文件夹下的所有文件
-var entryFiles={};
-utils.getFiles.getFileList("./src/", /entry_/).map( (n,i)=>{
-	// console.log(n,i)
-	entryFiles[n.filename]=n.fullpath;
-});
-// console.log( entryFiles );
 
 // 参数：https://doc.webpack-china.org/configuration/
 module.exports = {

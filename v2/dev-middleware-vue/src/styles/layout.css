@@ -1,0 +1,24 @@
+.layout_top{ height:50px; background:#324157; color:#fff; line-height:50px; }
+.sys_name{ font-size:16px; margin:0 0 0 20px;}
+.topnav{ float:right; font-size:14px; margin-right:20px;}
+.layout_body{ position:absolute; top:50px; bottom:0; width:100%; }
+.layout_crumb{ padding-top:11px; height:14px; background:none; position:relative; }
+.crumb_ico{font-size:16px; color:#1f2d3d; position:absolute; top:7px; }
+.crumb_content{ float:left; margin-left:20px;}
+.side{position:absolute;top:0;left:0;bottom:0;width:130px}
+.side .el-menu{min-height:100%}
+.container{position:absolute;top:0;right:0;left:130px;bottom:0;padding:10px;overflow:auto}
+.container>*{min-width:800px}
+.topbar{position:relative}
+.wrap{border:1px solid #eef}
+.wrap .header{padding:5px 10px;background-color:#f6f8f7;border-bottom:1px solid #e4e4e4}
+.wrap .title{font-weight:700;margin-right:15px}
+.wrap .body{background-color:#fff}
+.wrap .footer{padding:10px 30px;background-color:#fff;border-top:1px solid #e4e4e4}
+.form-body,.wrap-body{padding:20px 10px 30px}
+.form-footer{padding:10px 30px;background-color:#fff;border-top:1px solid #e4e4e4}
+.list-border{padding:0;list-style:none;border-top:1px solid #eee}
+.list-border li{padding:10px;border-bottom:1px solid #eee}
+.el-table .cell{padding:0 10px}
+.form-control .el-input,.form-control .el-select{width:100%}
+.el-pagination{padding:0;}
