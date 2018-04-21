@@ -2,7 +2,7 @@ var webpack = require('webpack')
 var CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 // extract-text-webpack-plugin：分离 css、js
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
-var AutoDllPlugin = require('autodll-webpack-plugin');
+// var AutoDllPlugin = require('autodll-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 var UglifyJsPlugin = require('uglifyjs-webpack-plugin')
@@ -50,13 +50,13 @@ function info(name){
 			new webpack.HotModuleReplacementPlugin(),
 
 			// 暂不支持 webpack 4
-			new AutoDllPlugin({
+			/* new AutoDllPlugin({
 				inject: true, // will inject the DLL bundles to index.html
 				filename: '[name].js',
 				entry: {
 					vendor: dll_entry
 				}
-			}),
+			}), */
 
 			// 当使用配置 devServer 字段时，
 			new HtmlWebpackPlugin({

@@ -12,8 +12,9 @@ var baseWebpackConfig = require('./webpack.base.conf')
 var publicPath = sysInfo.publicPath + '/dist/';
 
 var webpackConfig = merge(baseWebpackConfig, {
-	mode:'production',
-	devtool: sysInfo.devtool,
+	mode:'development',
+	// mode:'production',
+	// devtool: sysInfo.devtool,
 	output: {
 		path: utils.resolveRootPath('dist/'),
 		publicPath: publicPath,
