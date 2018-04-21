@@ -3907,7 +3907,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _int
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n// import {add} from 'ramda/es'\n// import ramda from 'ramda'\n// 仅将add模块打入最终文件中\n// const add = require('ramda/es/add.js')\nvar ramda = __webpack_require__(/*! ramda */ \"./node_modules/ramda/es/index.js\");\nconsole.log(ramda.add(11, 22));\n// console.log(123);\n// console.log(add(11,22));\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("\n\nvar _ramda = __webpack_require__(/*! ramda */ \"./node_modules/ramda/es/index.js\");\n\nvar _ramda2 = _interopRequireDefault(_ramda);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n// import ramda from 'ramda'\n// 仅将add模块打入最终文件中\n// const add = require('ramda/src/add.js')\n// const ramda = require('ramda')\nconsole.log((0, _ramda2.default)(11, 22));\n// console.log(123);\n// console.log(add(11,22));\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
