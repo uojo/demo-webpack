@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "",
+    "build:watch": "webpack --config webpack.base.conf.js --watch",
+    "serve:1": "webpack serve --config webpack.hot.1.conf.js",
+    "serve:2": "webpack serve --config webpack.hot.2.conf.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "babel-loader": "^8.2.3",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.1"
+  }
+}
