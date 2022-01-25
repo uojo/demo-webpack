@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "rollup ../project_src/entry_es_module.js --file bundle.js --format cjs"
+  },
+  "dependencies": {
+    "rollup": "^2.63.0"
+  }
+}
