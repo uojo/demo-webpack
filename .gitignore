@@ -1,7 +1,6 @@
 .DS_Store
 node_modules
-dist/*.map
-dist/bundle.js
+dist
 .idea
 package-lock.json
 out/*
