@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "babel ./a.js --out-file ./a.dist.js"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5"
+  }
+}
