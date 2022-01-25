@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "webpack --config webpack.conf.js",
+    "build:watch": "webpack --config webpack.conf.js --watch"
+  },
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
