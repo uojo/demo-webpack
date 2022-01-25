@@ -1,7 +1,9 @@
 module.exports = {
   mode: 'development',
+  // mode: 'production',
   entry: {
-    app: ['../src/index.js'],
+    // app: ['../project_src/index.js'],
+    app: ['../project_src/tree_shaking.js'],
   },
   output: {
     publicPath: "/dist/",
@@ -21,5 +23,9 @@ module.exports = {
         }
       }
     }]
+  },
+  optimization: {
+    usedExports: true,
+    // sideEffects: false
   },
 };

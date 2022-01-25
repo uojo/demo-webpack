@@ -2,6 +2,8 @@
   "private": true,
   "scripts": {
     "start": "",
+    "build": "webpack --config webpack.prod.conf.js",
+    "build:prod": "nodemon --exec 'yarn build' --watch ../project_src/ --watch ./",
     "build:watch": "webpack --config webpack.base.conf.js --watch",
     "serve:1": "webpack serve --config webpack.hot.1.conf.js",
     "serve:2": "webpack serve --config webpack.hot.2.conf.js"
@@ -15,5 +17,8 @@
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.1"
-  }
+  },
+  "sideEffects": [
+    "../project_src/es_c.js"
+  ]
 }
