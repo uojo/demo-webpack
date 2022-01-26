@@ -2,7 +2,7 @@ module.exports = {
   mode: 'development',
   // mode: 'production',
   entry: {
-    // app: ['../project_src/index.js'],
+    // app: ['../project_src/entry_hot.js'],
     app: ['../project_src/tree_shaking.js'],
   },
   output: {

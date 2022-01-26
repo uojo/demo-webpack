@@ -1,4 +1,4 @@
-require('./import_a')
+require('./entry_mixing_module')
 
 console.log('92.module.hot', module.hot);
 // if (module.hot) {

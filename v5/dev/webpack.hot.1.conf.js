@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    app: ['../project_src/index.js'],
+    app: ['../project_src/entry_hot.js'],
   },
   output: {
     publicPath: "/dist/",
@@ -28,7 +28,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Hot Module Replacement',
-      template: 'index-1.html'
+      template: 'index-1.html',
+      abc: 100
     }),
   ]
 };

@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    app: ['../project_src/index.js'],
+    app: ['../project_src/entry_hot.js'],
     // Runtime code for hot module replacement
     hot: 'webpack/hot/dev-server.js',
     // Dev server client for web socket transport, hot and live reload logic

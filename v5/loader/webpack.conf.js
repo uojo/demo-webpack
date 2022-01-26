@@ -9,8 +9,6 @@ module.exports = {
     filename: "[name].bundle.js",
     clean: true
   },
-  externals: {
-  },
   module: {
     rules: [
       // {
