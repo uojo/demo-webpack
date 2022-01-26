@@ -1,0 +1,5 @@
+- tree shaking 相关的 webpack 配置
+- 测试各种模块规范（cjs、esModule）组合后的编译结果
+- 测试 babel 配置项 preset-env targets，browserList 会影响 babel 转化的规则
+- 使用 HtmlWebpackPlugin
+- source_code 目录内存放未压缩的 bundle 代码片段
